@@ -1,5 +1,80 @@
 <resources>
-    <string name="app_name">Book.shop</string>
+    <string name="app_name">BookShop</string>
     <string name="book_table">The book table contains</string>
     <string name="book">books. \n\n</string>
+
+    <string name="empty_title">There is no books added yet.</string>
+    <string name="empty_subtitle">Get started by adding a new book.</string>
+    <string name="update_failed">Book update failed :(</string>
+    <string name="update_successful">Book update successful :)</string>
+    <string name="unsaved_changes_msg">Discard your changes and quit editing?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="delete_msg">Delete this book?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="editor_delete_book_failed">Error with deleting book</string>
+    <string name="editor_delete_book_successful">Book deleted</string>
+
+    <string name="menu_save">Save</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_delete">Delete</string>
+
+    <string name="catalog_sign">Error no books available sign</string>
+    <string name="catalog_title">Sorry there is no books in our shop</string>
+    <string name="catalog_subtitle">Come back later :)</string>
+
+    <string name="detail_cover">Cover image</string>
+    <string name="detail_name">War and Peace</string>
+    <string name="detail_quantity_text">Quantity:</string>
+    <string name="detail_quantity">100</string>
+    <string name="detail_currency">$</string>
+    <string name="detail_minus">-</string>
+    <string name="detail_plus">+</string>
+    <string name="detail_total_text">Total:</string>
+    <string name="detail_total">100</string>
+    <string name="detail_supplier">Supplier</string>
+    <string name="detail_sup_name">Big Bucks Co.</string>
+    <string name="detail_sup_mail">halas@gmail.com</string>
+    <string name="detail_sup_phone">+36 20 5514 888</string>
+    <string name="detail_mail_img">Mail image</string>
+    <string name="detail_phone_img">Phone image</string>
+
+    <string name="edit_book_info">Book info</string>
+    <string name="edit_name">Name *</string>
+    <string name="edit_price">Price *</string>
+    <string name="edit_quantity">Quantity *</string>
+    <string name="edit_supplier_info">Supplier info</string>
+    <string name="edit_sup_name">Supplier name *</string>
+    <string name="edit_sup_mail">Supplier email *</string>
+    <string name="edit_sup_phone">Supplier phone *</string>
+    <string name="edit_currency">$</string>
+
+    <string name="item_name">War and Peace</string>
+    <string name="item_price">50</string>
+    <string name="item_currency">$</string>
+    <string name="item_quantity">220</string>
+    <string name="item_in_stock"> in stock</string>
+    <string name="item_img">shopping cart</string>
+
+    <string name="title_edit">Edit book</string>
+    <string name="title_add">Add a book</string>
+    <string name="title_details">Book details</string>
+
+    <string name="msg_add_save_error">Error with saving book</string>
+    <string name="msg_add_save_success">Book saved</string>
+
+    <string name="book_added">Book added to the cart</string>
+    <string name="book_added_error">Error with adding book to the cart, please try again</string>
+
+    <string name="updated_quantity_error">Error with updating quantity</string>
+    <string name="updated_quantity">Quantity updated</string>
+
+    <string name="delete_book_error">Error with deleting book</string>
+    <string name="delete_book">Book deleted</string>
+
+    <string name="update_book_error">Error with updating the book</string>
+    <string name="update_book">Book updated</string>
+
+    <string name="fill_the_fields">Please fill all the starred fields to save the book</string>
 </resources>

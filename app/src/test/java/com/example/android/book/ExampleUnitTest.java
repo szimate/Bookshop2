@@ -1,4 +1,4 @@
-package com.example.android.bookshop;
+package com.example.android.book;
 
 import org.junit.Test;
 

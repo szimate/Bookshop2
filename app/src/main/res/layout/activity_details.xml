@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.book.DetailsActivity">
+
+    <ImageView
+        android:contentDescription="@string/detail_cover"
+        android:id="@+id/details_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_action_book" />
+
+    <TextView
+        android:id="@+id/details_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        tools:text="@string/detail_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_image" />
+
+    <TextView
+        android:id="@+id/text_view_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/detail_quantity_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_name" />
+
+    <Button
+        android:id="@+id/details_decrease"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/detail_minus"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_view_quantity"
+        app:layout_constraintStart_toEndOf="@+id/text_view_quantity" />
+
+    <TextView
+        android:id="@+id/details_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:minWidth="36dp"
+        android:text="@string/detail_quantity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_view_quantity"
+        app:layout_constraintStart_toEndOf="@+id/details_decrease" />
+
+    <Button
+        android:id="@+id/details_increase"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="@string/detail_plus"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_view_quantity"
+        app:layout_constraintStart_toEndOf="@+id/details_quantity" />
+
+    <TextView
+        android:id="@+id/text_view_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/detail_total_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_quantity" />
+
+    <TextView
+        android:id="@+id/details_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/detail_total"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_view_total"
+        app:layout_constraintStart_toStartOf="@+id/details_decrease" />
+
+    <TextView
+        android:id="@+id/currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="@string/detail_currency"
+        app:layout_constraintBaseline_toBaselineOf="@id/details_total"
+        app:layout_constraintStart_toEndOf="@+id/details_total" />
+
+    <TextView
+        android:id="@+id/details_supplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/detail_supplier"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_total" />
+
+    <TextView
+        android:id="@+id/details_supplier_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:text="@string/detail_sup_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintStart_toEndOf="@id/details_supplier"
+        app:layout_constraintTop_toBottomOf="@+id/details_supplier" />
+
+    <ImageView
+        android:contentDescription="@string/detail_sup_mail"
+        android:id="@+id/image_email"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="@+id/details_supplier_name"
+        app:layout_constraintTop_toBottomOf="@+id/details_supplier_name"
+        app:srcCompat="@drawable/ic_email" />
+
+    <ImageButton
+        android:contentDescription="@string/detail_phone_img"
+        android:id="@+id/image_phone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="@+id/image_email"
+        app:layout_constraintTop_toBottomOf="@+id/image_email"
+        app:srcCompat="@drawable/ic_phone" />
+
+    <TextView
+        android:id="@+id/details_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/detail_sup_mail"
+        app:layout_constraintBottom_toBottomOf="@+id/image_email"
+        app:layout_constraintStart_toEndOf="@+id/image_email"
+        app:layout_constraintTop_toTopOf="@+id/image_email" />
+
+    <TextView
+        android:id="@+id/details_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/detail_sup_phone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_phone"
+        app:layout_constraintStart_toEndOf="@+id/image_phone"
+        app:layout_constraintTop_toTopOf="@+id/image_phone" />
+
+</android.support.constraint.ConstraintLayout>
